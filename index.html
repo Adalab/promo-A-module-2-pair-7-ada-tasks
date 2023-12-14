@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Adatask</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <p>AdaTask</p>
+        </div>
+    </header>
+    <main>
+        <div class="newTask">
+            <input type="text" name="text" id="text" placeholder="Nueva tarea" class="inputNewTask js_inputNewTask"/>
+            <button class="btnAdd js_btnAdd">Añadir</button>
+        </div>
+        <div class="chooseTask">
+            <section class="searchTask">
+                <input type="text" name="text" id="text" placeholder="Ejemplo: Estudiar" class="inputTask js_inputTask"/>
+                <button class="btnSearch js_btnSearch">Buscar</button>
+            </section>
+            <section class="taskList">
+                <input type="checkbox" name="task1" id="task1" />
+                <label for="task1">Recoger setas en el campo</label>
+                <input type="checkbox" name="task2" id="task2" />
+                <label for="task2">Comprar pilas</label>
+                <input type="checkbox" name="task3" id="task3" />
+                <label for="task3">Poner una lavadora de blancos</label>
+                <input type="checkbox" name="task4" id="task4" />
+                <label for="task4">Aprender cómo se realizan las peticiones al servidor en JavaScript</label>
+            </section>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
