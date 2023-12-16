@@ -9,3 +9,15 @@ const tasks = [
       completed: false,
     },
   ];
+
+const task1 = document.querySelector('.js_task1');
+
+function completedTask(event) {
+  event.preventDefault();
+  if(task1.complete) {
+    task1.innerHTML +=`<li class= "tachado" >
+    <input id="${task1.id}" type= "checkbox" checked/>
+    </li>`;
+  }
+}
+task1.addEventListener('click', completedTask);
